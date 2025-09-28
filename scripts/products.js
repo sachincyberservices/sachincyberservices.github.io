@@ -47,9 +47,10 @@ function updateCategoryDisplay(jsonResponse, category) {
 }
 
 function returnProductItem(productData){
-    return `<div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300">
+    return `
+    <div class="product-card bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300">
         <div class="h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-            <img src=`${productData.image}` alt="Category Icon" class="h-24 w-24 object-contain" />
+            <img src="${productData.image}" alt="Category Icon" class="h-24 w-24 object-contain" />
         </div>
         <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">${productData.name}</h3>
