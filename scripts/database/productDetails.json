@@ -1,57 +1,55 @@
 {
-    "1":{
-        "title": "Button File",
-        "price": "₹19.50",
-        "mrp": "₹35",
-        "category": "Office Stationery",
-        "description": "Our premium file holders are ideal for students, professionals, and businesses looking to keep their documents organized and protected. Crafted from sturdy, high-quality materials, these file holders offer excellent durability, secure storage, and a sleek design that’s perfect for both everyday use and professional settings.",
-        "features": [
-            "Durable holder",
-            "Perfect size for daily use (A4/A5)",
-            "Eco-friendly materials used",
-            "Easy To handle
-        ],
-        "options": [],
-        "images": [
-            "https://m.media-amazon.com/images/I/41WAdI1RcRL._UF1000,1000_QL80_.jpg"
-       ]
-        },
-    "2":{
-          "title": "Handle File Holder",
-          "price": "₹219",
-          "mrp": "₹299",
-          "category": "Office Stationery",
-          "description": "Designed for easy portability and high capacity, our Handle File Holder is perfect for professionals and students who need to carry important documents on the go. With a strong handle, spacious compartments, and durable construction, it keeps your paperwork organized, protected, and easily accessible wherever you are.",
-          "features": [
-            "Sturdy built-in handle for easy carrying",
-            "Spacious design to hold multiple documents",
-            "Durable and water-resistant exterior",
-            "Secure locking mechanism",
-            "Ideal for meetings, interviews, or travel"
-          ],
-          "options": [],
-          "images": [
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNw2-Zt-_HgblexSd9ebY1yM73Aq6J0FT6Aw&s"
-          ]
-        },
-    "3":{
-          "title": "Zip File Holder",
-          "price": "₹249",
-          "mrp": "₹325",
-          "category": "Office Stationery",
-          "description": "Keep your important documents safe and secure with our Zip File Holder. Featuring a smooth zip closure and a sleek design, it’s perfect for carrying certificates, bills, and other papers without worrying about damage or loss. Ideal for office, school, or personal use.",
-          "features": [
-            "Premium zipper for secure closure",
-            "Perfect for A4-sized documents",
-            "Water-resistant material",
-            "Lightweight and easy to carry",
-            "Prevents folds, creases, and dust buildup"
-          ],
-          "options": [],
-          "images": [
-            "https://5.imimg.com/data5/SELLER/Default/2021/10/SH/EV/DA/138524774/whatsapp-image-2021-10-05-at-15-24-11-1000x1000.jpeg"
-          ]
-        }
-
-
+  "1": {
+    "title": "Button File",
+    "price": "₹19.50",
+    "mrp": "₹35",
+    "category": "Office Stationery",
+    "description": "Our premium file holders are ideal for students, professionals, and businesses looking to keep their documents organized and protected. Crafted from sturdy, high-quality materials, these file holders offer excellent durability, secure storage, and a sleek design that’s perfect for both everyday use and professional settings.",
+    "features": [
+      "Durable holder",
+      "Perfect size for daily use (A4/A5)",
+      "Eco-friendly materials used",
+      "Easy To handle"
+    ],
+    "options": [],
+    "images": [
+      "https://m.media-amazon.com/images/I/41WAdI1RcRL._UF1000,1000_QL80_.jpg"
+    ]
+  },
+  "2": {
+    "title": "Handle File Holder",
+    "price": "₹219",
+    "mrp": "₹299",
+    "category": "Office Stationery",
+    "description": "Designed for easy portability and high capacity, our Handle File Holder is perfect for professionals and students who need to carry important documents on the go. With a strong handle, spacious compartments, and durable construction, it keeps your paperwork organized, protected, and easily accessible wherever you are.",
+    "features": [
+      "Sturdy built-in handle for easy carrying",
+      "Spacious design to hold multiple documents",
+      "Durable and water-resistant exterior",
+      "Secure locking mechanism",
+      "Ideal for meetings, interviews, or travel"
+    ],
+    "options": [],
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNw2-Zt-_HgblexSd9ebY1yM73Aq6J0FT6Aw&s"
+    ]
+  },
+  "3": {
+    "title": "Zip File Holder",
+    "price": "₹249",
+    "mrp": "₹325",
+    "category": "Office Stationery",
+    "description": "Keep your important documents safe and secure with our Zip File Holder. Featuring a smooth zip closure and a sleek design, it’s perfect for carrying certificates, bills, and other papers without worrying about damage or loss. Ideal for office, school, or personal use.",
+    "features": [
+      "Premium zipper for secure closure",
+      "Perfect for A4-sized documents",
+      "Water-resistant material",
+      "Lightweight and easy to carry",
+      "Prevents folds, creases, and dust buildup"
+    ],
+    "options": [],
+    "images": [
+      "https://5.imimg.com/data5/SELLER/Default/2021/10/SH/EV/DA/138524774/whatsapp-image-2021-10-05-at-15-24-11-1000x1000.jpeg"
+    ]
+  }
 }
