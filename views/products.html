@@ -35,7 +35,7 @@
                         Products<span class="dropdown-arrow">▼</span>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="./views/products.html">✏️ Office Stationery</a>
+                        <a href="/views/products.html">✏️ Office Stationery</a>
                         <a href="#products">📄 Printer Papers</a>
                         <a href="#products">🆔 Digital Services</a>
                         <a href="#products">💳 All Job Forms</a>
@@ -50,8 +50,80 @@
         </nav>
     </header>
 
+    <!-- Mobile Header Start -->
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu-overlay fixed inset-0 bg-black bg-opacity-50 z-40 hidden" onclick="toggleMobileMenu()"></div>
+
+<!-- Mobile Menu Sidebar -->
+<div class="mobile-menu fixed top-0 right-0 h-full w-80 max-w-sm transform translate-x-full transition-transform duration-300 ease-in-out z-50" id="mobileMenu">
+    <div class="mobile-menu-header flex items-center justify-between p-4">
+        <div class="flex items-center gap-2">
+            <div class="logo-icon w-9 h-9">
+                SCS
+            </div>
+            <div>
+                <h2 class="font-semibold text-sm" style="color: hsl(215 20% 15%);">Sachin Cyber Services</h2>
+                <p class="text-xs" style="color: hsl(215 16% 47%);">Your Digital Partner</p>
+            </div>
+        </div>
+        <button onclick="toggleMobileMenu()" class="mobile-menu-close">
+            <svg class="w-5 h-5" style="color: hsl(215 16% 47%);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+
+    <div class="mobile-menu-content">
+        <nav class="p-4 space-y-1">
+            <a href="/" class="mobile-nav-item">
+                <div class="mobile-nav-icon">🏠</div>
+                <span>Home</span>
+            </a>
+
+            <div>
+                <button onclick="toggleMobileDropdown('products')" class="mobile-nav-item w-full">
+                    <div class="mobile-nav-icon">📦</div>
+                    <span class="flex-1 text-left">Products</span>
+                    <svg class="w-4 h-4 transition-transform" id="products-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="hidden mobile-submenu space-y-1" id="products-submenu">
+                    <a href="/views/products.html">✏️ Office Stationery</a>
+                    <a href="#products">📄 Printer Papers</a>
+                    <a href="#products">🆔 Digital Services</a>
+                    <a href="#products">💳 All Job Forms</a>
+                    <a href="#products">💸 Money Transfer</a>
+                    <a href="#products">🖨️ Document Printing</a>
+                </div>
+            </div>
+
+            <a href="#contact" class="mobile-nav-item">
+                <div class="mobile-nav-icon">📧</div>
+                <span>Contact Us</span>
+            </a>
+        </nav>
+
+        <div class="mobile-menu-footer p-4">
+            <div class="space-y-2">
+                <a href="tel:+918053769503" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white transition-colors text-sm" style="color: hsl(215 16% 47%);">
+                    <span>📞</span>
+                    <span>+91 8053769503</span>
+                </a>
+                
+                <a href="https://wa.me/918053769503" target="_blank" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white transition-colors text-sm" style="color: hsl(215 16% 47%);">
+                    <span>💬</span>
+                    <span>WhatsApp Chat</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mobile Header End -->
+
     <!-- HERO SECTION -->
-    <section class="bg-gradient-to-r from-green-600 to-green-800 text-white py-5">
+    <section class="text-white py-5" style="background: linear-gradient(to right, hsl(142 76% 36%), hsl(142 71% 45%));">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Products & Services</h1>
             <p class="text-xl md:text-2xl mb-8 opacity-90">Quality solutions for all your digital and office needs</p>
@@ -80,7 +152,7 @@
                             <h3 class="text-xl font-semibold mb-2">Notebooks & Registers</h3>
                             <p class="text-gray-600 mb-4">High-quality notebooks, registers, and writing pads for office and personal use.</p>
                             <div class="flex justify-between items-center">
-                                <span class="text-2xl font-bold text-green-600">₹50+</span>
+                                <span class="text-2xl font-bold" style="color: hsl(142 76% 36%);">₹50+</span>
                                 <button class="order-btn text-white px-6 py-2 rounded-lg font-semibold" onclick="window.location.href='./productdetails.html'">
                                     Order Now
                                 </button>

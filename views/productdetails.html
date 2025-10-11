@@ -6,6 +6,8 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/productDetail.css">
+    <script src="../scripts/common/header.js" defer></script>
+    <script src="../scripts/common/footer.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,7 +35,7 @@
                         Products<span class="dropdown-arrow">▼</span>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="./views/products.html">✏️ Office Stationery</a>
+                        <a href="/views/products.html">✏️ Office Stationery</a>
                         <a href="#products">📄 Printer Papers</a>
                         <a href="#products">🆔 Digital Services</a>
                         <a href="#products">💳 All Job Forms</a>
@@ -47,6 +49,76 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay fixed inset-0 bg-black bg-opacity-50 z-40 hidden" onclick="toggleMobileMenu()"></div>
+
+    <!-- Mobile Menu Sidebar -->
+    <div class="mobile-menu fixed top-0 right-0 h-full w-80 max-w-sm transform translate-x-full transition-transform duration-300 ease-in-out z-50" id="mobileMenu">
+        <div class="mobile-menu-header flex items-center justify-between p-4">
+            <div class="flex items-center gap-2">
+                <div class="logo-icon w-9 h-9">
+                    SCS
+                </div>
+                <div>
+                    <h2 class="font-semibold text-sm" style="color: hsl(215 20% 15%);">Sachin Cyber Services</h2>
+                    <p class="text-xs" style="color: hsl(215 16% 47%);">Your Digital Partner</p>
+                </div>
+            </div>
+            <button onclick="toggleMobileMenu()" class="mobile-menu-close">
+                <svg class="w-5 h-5" style="color: hsl(215 16% 47%);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu-content">
+            <nav class="p-4 space-y-1">
+                <a href="/" class="mobile-nav-item">
+                    <div class="mobile-nav-icon">🏠</div>
+                    <span>Home</span>
+                </a>
+
+                <div>
+                    <button onclick="toggleMobileDropdown('products')" class="mobile-nav-item w-full">
+                        <div class="mobile-nav-icon">📦</div>
+                        <span class="flex-1 text-left">Products</span>
+                        <svg class="w-4 h-4 transition-transform" id="products-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden mobile-submenu space-y-1" id="products-submenu">
+                        <a href="/views/products.html">✏️ Office Stationery</a>
+                        <a href="#products">📄 Printer Papers</a>
+                        <a href="#products">🆔 Digital Services</a>
+                        <a href="#products">💳 All Job Forms</a>
+                        <a href="#products">💸 Money Transfer</a>
+                        <a href="#products">🖨️ Document Printing</a>
+                    </div>
+                </div>
+
+                <a href="#contact" class="mobile-nav-item">
+                    <div class="mobile-nav-icon">📧</div>
+                    <span>Contact Us</span>
+                </a>
+            </nav>
+
+            <div class="mobile-menu-footer p-4">
+                <div class="space-y-2">
+                    <a href="tel:+918053769503" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white transition-colors text-sm" style="color: hsl(215 16% 47%);">
+                        <span>📞</span>
+                        <span>+91 8053769503</span>
+                    </a>
+                    
+                    <a href="https://wa.me/918053769503" target="_blank" class="flex items-center gap-2 p-2 rounded-lg hover:bg-white transition-colors text-sm" style="color: hsl(215 16% 47%);">
+                        <span>💬</span>
+                        <span>WhatsApp Chat</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- PRODUCT DETAIL SECTION -->
     <section class="py-8 bg-gray-50">
         <div class="container mx-auto px-4">
