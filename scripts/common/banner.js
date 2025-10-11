@@ -20,7 +20,8 @@ function initBanner() {
 
     banner.style.backgroundColor = bannerConfig.banner.backgroundColor;
     banner.style.color = bannerConfig.banner.textColor;
-    banner.querySelector('.banner-text').textContent = bannerConfig.banner.message;
+    banner.querySelector('.banner-title').textContent = bannerConfig.banner.title;
+    banner.querySelector('.banner-subtitle').textContent = bannerConfig.banner.message;
     banner.classList.remove('hidden');
 
     window.addEventListener('scroll', () => {
