@@ -1,3 +1,25 @@
+// google-analytics.js
+(function() {
+  // Load the Google Analytics script asynchronously
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-C72HYLYTMJ';
+  document.head.appendChild(script);
+
+  // Initialize the dataLayer and gtag
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+
+  // Expose gtag globally (optional but useful)
+  window.gtag = gtag;
+
+  // Configure Analytics
+  gtag('js', new Date());
+  gtag('config', 'G-C72HYLYTMJ');
+})();
+
+
+
 function toggleMobileMenu() {
     const mobileMenu = document.getElementById('mobileMenu');
     const overlay = document.querySelector('.mobile-menu-overlay');
