@@ -258,6 +258,129 @@
                 </div>
             </section>
 
+            <!-- Shop Gallery Section -->
+            <section id="shop-image-gallery" class="py-16 px-8">
+                <div class="text-center mb-12">
+                    <h2 class="section-title">Our Shop Gallery</h2>
+                    <p class="text-gray-600 mt-4 text-lg max-w-2xl mx-auto">
+                        <i class="fas fa-camera text-purple-600 mr-2"></i>
+                        Take a virtual tour of our shop and facilities
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                    <!-- Gallery Item 1 -->
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer" onclick="openLightbox(0)">
+                        <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-purple-100 to-blue-100">
+                            <img src="/assets/shopgallery/shop_image1.jpeg" alt="Shop View 1" class="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110" >
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <h3 class="text-white font-bold text-xl mb-2">Shop Front View</h3>
+                                <p class="text-gray-200 text-sm">Our welcoming storefront</p>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-0 group-hover:scale-100">
+                            <i class="fas fa-search-plus text-purple-600 text-lg"></i>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer" onclick="openLightbox(1)">
+                        <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-purple-100 to-blue-100">
+                            <img src="/assets/shopgallery/shop_image2.jpeg" alt="Shop View 2" class="w-full h-64 transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <h3 class="text-white font-bold text-xl mb-2">Interior View</h3>
+                                <p class="text-gray-200 text-sm">Inside our service center</p>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-0 group-hover:scale-100">
+                            <i class="fas fa-search-plus text-purple-600 text-lg"></i>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer" onclick="openLightbox(2)">
+                        <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-purple-100 to-blue-100">
+                            <img src="./assets/shopgallery/shop_image3.jpeg" alt="Shop View 3" class="w-full h-64 transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <h3 class="text-white font-bold text-xl mb-2">All Facilities</h3>
+                                <p class="text-gray-200 text-sm">Our modern facilities</p>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-0 group-hover:scale-100">
+                            <i class="fas fa-search-plus text-purple-600 text-lg"></i>
+                        </div>
+                    </div>
+
+                    <!-- <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer" onclick="openLightbox(3)">
+                        <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-purple-100 to-blue-100">
+                            <img src="./assets/shopgallery/shop4.jpg" alt="Shop View 4" class="w-full h-64  transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <h3 class="text-white font-bold text-xl mb-2">Equipment Area</h3>
+                                <p class="text-gray-200 text-sm">Our modern equipment</p>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-0 group-hover:scale-100">
+                            <i class="fas fa-search-plus text-purple-600 text-lg"></i>
+                        </div>
+                    </div>
+
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer" onclick="openLightbox(4)">
+                        <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-purple-100 to-blue-100">
+                            <img src="./assets/shopgallery/shop5.jpg" alt="Shop View 5" class="w-full h-64 transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <h3 class="text-white font-bold text-xl mb-2">Product Display</h3>
+                                <p class="text-gray-200 text-sm">Our product showcase</p>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-0 group-hover:scale-100">
+                            <i class="fas fa-search-plus text-purple-600 text-lg"></i>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer" onclick="openLightbox(5)">
+                        <div class="aspect-w-16 aspect-h-12 bg-gradient-to-br from-purple-100 to-blue-100">
+                            <img src="./assets/shopgallery/shop6.jpg" alt="Shop View 6" class="w-full h-64 transition-transform duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <h3 class="text-white font-bold text-xl mb-2">Customer Area</h3>
+                                <p class="text-gray-200 text-sm">Comfortable waiting space</p>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-0 group-hover:scale-100">
+                            <i class="fas fa-search-plus text-purple-600 text-lg"></i>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="fixed inset-0 bg-black/95 z-[9999] hidden items-center justify-center p-4" onclick="closeLightbox()">
+                <button class="absolute top-4 right-4 text-white hover:text-purple-400 transition-colors z-10" onclick="closeLightbox()">
+                    <i class="fas fa-times text-3xl"></i>
+                </button>
+                <button class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-purple-400 transition-colors text-4xl z-10" onclick="event.stopPropagation(); prevImage()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-purple-400 transition-colors text-4xl z-10" onclick="event.stopPropagation(); nextImage()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="max-w-6xl max-h-[90vh] relative" onclick="event.stopPropagation()">
+                    <img id="lightbox-img" src="" alt="Gallery Image" class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl">
+                    <div class="text-center mt-4">
+                        <p id="lightbox-caption" class="text-white text-xl font-semibold"></p>
+                        <p id="lightbox-counter" class="text-gray-400 text-sm mt-2"></p>
+                    </div>
+                </div>
+            </div>
+
             <!-- Services Section -->
             <section id="about" class="services-section">
                 <h2 class="section-title">Our Services</h2>
