@@ -10,7 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="./scripts/common/footer.js" defer></script>
     <script src="./scripts/common/header.js" defer></script>
-    <script src="./scripts/common/banner.js" defer></script>
 </head>
 <body style="opacity: 1; transition: opacity 0.5s ease-in;">
     <!-- HEADER SECTION WITH NAVIGATION -->
@@ -53,49 +52,6 @@
             </ul>
         </nav>
     </header>
-
-    <!-- Wishes Banner -->
-    <div id="wishes-banner" class="hidden">
-        <div class="banner-diya-left">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="80" height="80">
-                <g class="flame" transform="translate(60,28)">
-                    <path d="M0 0 C12 10 12 26 0 40 C-12 26 -8 12 0 0 Z" fill="#FF6B35" opacity="0.98"/>
-                    <path d="M0 8 C6 14 6 24 0 32 C-6 24 -4 14 0 8 Z" fill="#FFD93D" opacity="0.9"/>
-                </g>
-                <g transform="translate(12,48)">
-                    <path d="M6 22 C18 44 102 44 114 22 C90 36 30 36 6 22 Z" fill="#FFA726" stroke="#D84315" stroke-width="2"/>
-                    <ellipse cx="60" cy="36" rx="46" ry="8" fill="rgba(0,0,0,0.1)"/>
-                </g>
-                <g transform="translate(0,84)">
-                    <rect x="30" y="0" width="60" height="8" rx="4" fill="#D84315" opacity="0.95"/>
-                </g>
-            </svg>
-        </div>
-        <div class="banner-content">
-            <div class="banner-title"></div>
-            <div class="banner-subtitle"></div>
-        </div>
-        <div class="banner-diya-right">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="80" height="80">
-                <g class="flame" transform="translate(60,28)">
-                    <path d="M0 0 C12 10 12 26 0 40 C-12 26 -8 12 0 0 Z" fill="#FF6B35" opacity="0.98"/>
-                    <path d="M0 8 C6 14 6 24 0 32 C-6 24 -4 14 0 8 Z" fill="#FFD93D" opacity="0.9"/>
-                </g>
-                <g transform="translate(12,48)">
-                    <path d="M6 22 C18 44 102 44 114 22 C90 36 30 36 6 22 Z" fill="#FFA726" stroke="#D84315" stroke-width="2"/>
-                    <ellipse cx="60" cy="36" rx="46" ry="8" fill="rgba(0,0,0,0.1)"/>
-                </g>
-                <g transform="translate(0,84)">
-                    <rect x="30" y="0" width="60" height="8" rx="4" fill="#D84315" opacity="0.95"/>
-                </g>
-            </svg>
-        </div>
-        <button class="banner-close" onclick="closeBanner()" aria-label="Close banner" title="Close">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                <path d="M1 1L13 13M13 1L1 13"/>
-            </svg>
-        </button>
-    </div>
 
     <!-- Mobile Header Start -->
 
