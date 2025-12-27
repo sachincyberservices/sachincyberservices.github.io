@@ -7,9 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/tempAdd.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="./scripts/common/footer.js" defer></script>
     <script src="./scripts/common/header.js" defer></script>
+    <script src="./scripts/startup.js" defer></script>
 </head>
 <body style="opacity: 1; transition: opacity 0.5s ease-in;">
     <!-- HEADER SECTION WITH NAVIGATION -->
@@ -124,6 +126,41 @@
     </div>
 </div>
 <!-- Mobile Header End -->
+
+    <!-- ========== BANNER POPUP START ========== -->
+    <div id="promo-banner" class="hidden fixed inset-0 z-[9999] pointer-events-none">
+        <canvas id="confetti-canvas" class="absolute inset-0 w-full h-full"></canvas>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-auto">
+            <div class="relative bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-2xl mx-4 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-50 via-pink-50 to-yellow-50 opacity-50"></div>
+                <button onclick="closeBanner()" class="absolute top-4 right-4 w-10 h-10 bg-gradient-to-br from-red-500 to-pink-600 hover:from-red-600 hover:to-pink-700 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 z-10">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="relative z-10 text-center">
+                    <div class="mb-6 animate-bounce-slow">
+                        <span class="text-7xl">🎊</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent animate-gradient">
+                        Happy New Year 2025!
+                    </h2>
+                    <p class="text-xl md:text-2xl text-gray-700 mb-6 font-semibold">
+                        Wishing you prosperity, success & happiness! ✨
+                    </p>
+                    <div class="flex justify-center gap-4 text-4xl mb-4">
+                        <span class="animate-bounce" style="animation-delay: 0s;">🎉</span>
+                        <span class="animate-bounce" style="animation-delay: 0.1s;">🎆</span>
+                        <span class="animate-bounce" style="animation-delay: 0.2s;">🎊</span>
+                        <span class="animate-bounce" style="animation-delay: 0.3s;">✨</span>
+                    </div>
+                    <button onclick="closeBanner()" class="mt-4 px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold rounded-full shadow-lg transition-all duration-300 hover:scale-105">
+                        Let's Celebrate! 🎉
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== BANNER POPUP END ========== -->
+
     <!-- MAIN CONTENT -->
     <div class="container" style="margin: auto;">
         <main>
@@ -134,7 +171,7 @@
                     <div class="hero-shape hero-shape-2"></div>
                     <div class="hero-shape hero-shape-3"></div>
                 </div>
-                <div class="relative z-10">
+                <div class="relative">
                     <div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/20 mb-6">
                         <i class="fas fa-star"></i>
                         <span class="text-sm font-semibold tracking-wide">Premium Digital Solutions</span>
@@ -428,7 +465,7 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
                     <div class="group relative bg-gradient-to-br from-yellow-400 to-orange-500 rounded-3xl p-8 overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
-                        <div class="relative z-10">
+                        <div class="relative">
                             <div class="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6">
                                 <i class="fas fa-bolt text-3xl text-white"></i>
                             </div>
@@ -438,7 +475,7 @@
                     </div>
                     <div class="group relative bg-gradient-to-br from-blue-500 to-indigo-600 rounded-3xl p-8 overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
-                        <div class="relative z-10">
+                        <div class="relative">
                             <div class="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6">
                                 <i class="fas fa-mobile-alt text-3xl text-white"></i>
                             </div>
@@ -448,7 +485,7 @@
                     </div>
                     <div class="group relative bg-gradient-to-br from-green-500 to-emerald-600 rounded-3xl p-8 overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
-                        <div class="relative z-10">
+                        <div class="relative">
                             <div class="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6">
                                 <i class="fas fa-money-bill-wave text-3xl text-white"></i>
                             </div>
@@ -458,7 +495,7 @@
                     </div>
                     <div class="group relative bg-gradient-to-br from-purple-500 to-pink-600 rounded-3xl p-8 overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer">
                         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"></div>
-                        <div class="relative z-10">
+                        <div class="relative">
                             <div class="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6">
                                 <i class="fas fa-file-alt text-3xl text-white"></i>
                             </div>

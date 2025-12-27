@@ -1,0 +1,60 @@
+/* ========== BANNER POPUP STYLES START ========== */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+    background-size: 200% auto;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes bounce-slow {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animate-bounce-slow {
+    animation: bounce-slow 2s ease-in-out infinite;
+}
+
+#promo-banner {
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+#promo-banner > div > div {
+    animation: scaleIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 640px) {
+    #promo-banner h2 {
+        font-size: 2rem;
+    }
+    
+    #promo-banner p {
+        font-size: 1.125rem;
+    }
+    
+    #promo-banner > div > div {
+        padding: 2rem 1.5rem;
+    }
+}
+/* ========== BANNER POPUP STYLES END ========== */
