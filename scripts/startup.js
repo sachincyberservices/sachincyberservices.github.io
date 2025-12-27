@@ -75,7 +75,7 @@
             createConfetti();
             document.body.style.overflow = 'hidden';
         }
-    }, 5000);
+    }, 1500);
     
     window.closeBanner = function() {
         const banner = document.getElementById('promo-banner');
